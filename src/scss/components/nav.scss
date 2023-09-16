@@ -1,0 +1,46 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__item {
+    & a {
+      position: relative;
+      z-index: 1;
+
+      display: block;
+      padding: 16px 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -13px;
+        z-index: 1;
+
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $green;
+
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s ease;
+      }
+
+      @media (any-hover: hover) {
+        &:hover {
+          &::before {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,16 @@
 .header {
+  position: sticky;
+  background-color: $blue-4;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__burger {
+    display: none;
+  }
 }
 
 // @media (max-width: 767px) {
