@@ -1,0 +1,34 @@
+.checkbox {
+  & input {
+    display: none;
+
+    &:checked ~ label {
+      &::before {
+        background-color: $green;
+      }
+    }
+  }
+
+  & label {
+    display: flex;
+    gap: 10px;
+
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background-color: $blue;
+      border: 4px solid $blue;
+
+      transition: 0.2s ease;
+    }
+
+    & a {
+      color: $green;
+    }
+  }
+}

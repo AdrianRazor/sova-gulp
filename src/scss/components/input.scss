@@ -1,4 +1,81 @@
 .input {
-}
-.input__error {
+  position: relative;
+  z-index: 1;
+
+  &__field {
+    position: relative;
+    z-index: 1;
+  }
+
+  & input {
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 100px;
+    background-color: $blue-2;
+    border-radius: 99px;
+    border: 1px solid transparent;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $white;
+
+    transition: 0.2s ease;
+
+    &[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &::placeholder {
+      font-weight: normal;
+      color: rgb(222, 216, 216, 0.6);
+    }
+
+    &:focus {
+      border-color: $green;
+    }
+
+    &:invalid {
+      border-color: $red;
+    }
+  }
+
+  &__box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__error {
+    position: absolute;
+    top: 100%;
+    left: 30px;
+    z-index: 1;
+  }
+
+  &--coin {
+    & input {
+      font-size: 18px;
+    }
+  }
 }
