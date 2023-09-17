@@ -1,0 +1,19 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & svg {
+      fill: $green;
+    }
+  }
+
+  &__date {
+    margin-top: auto;
+  }
+}

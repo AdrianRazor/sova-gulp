@@ -83,14 +83,30 @@
 
   &__bottom {
     display: grid;
-    gap: 30px;
+    gap: 20px;
 
-    max-height: 250px;
+    max-height: 240px;
     overflow-y: auto;
 
     padding: 50px;
     background-color: $blue-4;
     border-radius: 0 0 15px 15px;
+
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+
+      &-thumb {
+        background-color: $sky;
+        border-radius: 99px;
+      }
+
+      &-track {
+        background-color: $blue-4;
+        border-radius: 99px;
+      }
+    }
   }
 
   &__item {
