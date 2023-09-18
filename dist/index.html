@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Sova</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="text nav__item">
+                <a href="#">Правила обмена</a>
+              </li>
+              <li class="text nav__item">
+                <a href="#">Партнерам</a>
+              </li>
+              <li class="text nav__item">
+                <a href="#">Ответы на вопросы</a>
+              </li>
+              <li class="text nav__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger header__burger"></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="start">
+        <div class="container">
+          <p class="text start__mode">Режим работы 24/7</p>
+
+          <div class="start__wrapper">
+            <div class="start__column">
+              <div class="start__block">
+                <span class="text text--18 start__num">1</span>
+
+                <div class="start__head">
+                  <h2 class="title">Отдаете</h2>
+                  <p class="text text--12">Минимум: 100 USDT</p>
+                </div>
+
+                <div class="input input--coin">
+                  <div class="input__field">
+                    <input type="number" id="moneyOut" value="100" />
+                    <div class="input__box">
+                      <span class="text text--upper">BTC</span>
+                      <div class="input__icon">
+                        <img src="img/logo-btc.png" alt="logo btc" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text text--red input__error hidden">
+                    Error message
+                  </p>
+                </div>
+
+                <div class="start__box">
+                  <h3 class="text">Валюта отдачи:</h3>
+                  <ul class="start__coins">
+                    <li class="btn btn--small active">LTC</li>
+                    <li class="btn btn--small">XTZ</li>
+                    <li class="btn btn--small">BTC</li>
+                    <li class="btn btn--small">ZEC</li>
+                    <li class="btn btn--small">TRX</li>
+                    <li class="btn btn--small">ETH</li>
+                    <li class="btn btn--small">XMR</li>
+                    <li class="btn btn--small">DASH</li>
+                    <li class="btn btn--small">DOGE</li>
+                    <li class="btn btn--small">VET</li>
+                    <li class="btn btn--small">BTG</li>
+                    <li class="btn btn--small">DGB</li>
+                    <li class="btn btn--small">ALGO</li>
+                    <li class="btn btn--small">SOL</li>
+                    <li class="btn btn--small">RVN</li>
+                    <li class="btn btn--small">ATOM</li>
+                    <li class="btn btn--small">Ada</li>
+                    <li class="btn btn--small">Ark</li>
+                    <li class="btn btn--small">Usdt</li>
+                    <li class="btn btn--small">XLM</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="start__bottom">
+                <h3 class="text">Валюта отдачи:</h3>
+                <ul class="start__list">
+                  <li class="start__item active">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">LTC</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">XTZ</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">BTC</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">ZEC</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">TRX</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">ETH</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">XMR</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">DASH</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">DOGE</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">VET</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">BTG</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">DGB</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">ALGO</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">SOL</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">RVN</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">ATOM</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">Ada</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">Ark</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">Usdt</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">XLM</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="start__column">
+              <div class="start__block">
+                <span class="text text--18 start__num">2</span>
+
+                <div class="start__head">
+                  <h2 class="title">Получите</h2>
+                </div>
+
+                <div class="input input--coin">
+                  <div class="input__field">
+                    <input type="number" id="moneyIn" value="100" />
+                    <div class="input__box">
+                      <span class="text text--upper">BTC</span>
+                      <div class="input__icon">
+                        <img src="img/logo-btc.png" alt="logo btc" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text text--red input__error hidden">
+                    Error message
+                  </p>
+                </div>
+
+                <div class="start__box">
+                  <h3 class="text">Валюта получения:</h3>
+                  <ul class="start__coins">
+                    <li class="btn btn--small active">LTC</li>
+                    <li class="btn btn--small">XTZ</li>
+                    <li class="btn btn--small">BTC</li>
+                    <li class="btn btn--small">ZEC</li>
+                    <li class="btn btn--small">TRX</li>
+                    <li class="btn btn--small">ETH</li>
+                    <li class="btn btn--small">XMR</li>
+                    <li class="btn btn--small">DASH</li>
+                    <li class="btn btn--small">DOGE</li>
+                    <li class="btn btn--small">VET</li>
+                    <li class="btn btn--small">BTG</li>
+                    <li class="btn btn--small">DGB</li>
+                    <li class="btn btn--small">ALGO</li>
+                    <li class="btn btn--small">SOL</li>
+                    <li class="btn btn--small">RVN</li>
+                    <li class="btn btn--small">ATOM</li>
+                    <li class="btn btn--small">Ada</li>
+                    <li class="btn btn--small">Ark</li>
+                    <li class="btn btn--small">Usdt</li>
+                    <li class="btn btn--small">XLM</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="start__bottom">
+                <h3 class="text">Валюта получения:</h3>
+                <ul class="start__list">
+                  <li class="start__item active">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">LTC</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">XTZ</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">BTC</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">ZEC</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">TRX</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">ETH</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">XMR</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">DASH</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">DOGE</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">VET</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">BTG</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">DGB</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">ALGO</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">SOL</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">RVN</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">ATOM</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">Ada</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">Ark</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">Usdt</span>
+                  </li>
+                  <li class="start__item">
+                    <div class="start__icon">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <span class="text text--14">XLM</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="start__column">
+              <div class="start__block">
+                <span class="text text--18 start__num">3</span>
+
+                <div class="start__head">
+                  <h2 class="title">Ввод данных</h2>
+                </div>
+
+                <div class="form">
+                  <h3 class="text">Введите данные для завершения обмена:</h3>
+                  <div class="input form__input">
+                    <div class="input__field">
+                      <input
+                        type="email"
+                        id="userEmail"
+                        placeholder="Введите Ваш E-mail"
+                      />
+                      <div class="input__box">
+                        <div class="input__icon">
+                          <img src="img/icon-mail.svg" alt="logo btc" />
+                        </div>
+                      </div>
+                    </div>
+                    <p class="text text--red input__error hidden">
+                      Error message
+                    </p>
+                  </div>
+                  <div class="input form__input">
+                    <div class="input__field">
+                      <input
+                        type="text"
+                        id="userName"
+                        placeholder="ФИО отправителя"
+                      />
+                      <div class="input__box">
+                        <div class="input__icon">
+                          <img src="img/icon-user.svg" alt="logo btc" />
+                        </div>
+                      </div>
+                    </div>
+                    <p class="text text--red input__error hidden">
+                      Error message
+                    </p>
+                  </div>
+                  <div class="input form__input">
+                    <div class="input__field">
+                      <input
+                        type="number"
+                        id="userPhone"
+                        placeholder="Введите Ваш номер телефона"
+                      />
+                      <div class="input__box">
+                        <div class="input__icon">
+                          <img src="img/icon-phone.svg" alt="logo btc" />
+                        </div>
+                      </div>
+                    </div>
+                    <p class="text text--red input__error hidden">
+                      Error message
+                    </p>
+                  </div>
+                  <div class="checkbox form__checkbox">
+                    <input type="checkbox" id="policy" />
+                    <label for="policy">
+                      <span class="text text--14">
+                        Я согласен с
+                        <a href="#">политикой AML/KYC</a>
+                        и
+                        <a href="#">правилами обмена</a>
+                        *
+                      </span>
+                    </label>
+                  </div>
+                  <button type="submit" class="btn form__btn">
+                    Обменять сейчас
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__wrapper">
+            <h2 class="title">Отзывы наших клиентов</h2>
+            <div class="reviews__grid">
+              <div class="comment">
+                <div class="comment__name">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#comment"></use>
+                  </svg>
+                  <p class="text text--18">Kassad</p>
+                </div>
+                <p class="text">
+                  Все четко. Обращался первый раз. Хороший сервис.
+                </p>
+                <p class="text text--14 comment__date">13.09.2023 11:37:16</p>
+              </div>
+              <div class="comment">
+                <div class="comment__name">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#comment"></use>
+                  </svg>
+                  <p class="text text--18">Олег</p>
+                </div>
+                <p class="text">Все супер гуд</p>
+                <p class="text text--14 comment__date">09.09.2023 21:22:07</p>
+              </div>
+              <div class="comment">
+                <div class="comment__name">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#comment"></use>
+                  </svg>
+                  <p class="text text--18">Роман</p>
+                </div>
+                <p class="text">
+                  Просто самый лучший обменник, а оператор Анна, это специалист
+                  с большой буквы. Удачи вам и процветания
+                </p>
+                <p class="text text--14 comment__date">07.09.2023 13:31:44</p>
+              </div>
+              <div class="comment">
+                <div class="comment__name">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#comment"></use>
+                  </svg>
+                  <p class="text text--18">Сергей</p>
+                </div>
+                <p class="text">
+                  Все блистательно, как и всегда. Похоже это лучший обменник,
+                  который мне попадался. буду рекомендовать
+                </p>
+                <p class="text text--14 comment__date">02.09.2023 18:49:23</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__row">
+            <ul class="footer__list">
+              <li class="text">Партнёр сервисов:</li>
+              <li class="footer__item">
+                <img src="img/logo-partner-6.jpg" alt="logo partner" />
+              </li>
+              <li class="footer__item">
+                <img src="img/logo-partner-1.svg" alt="logo partner" />
+              </li>
+              <li class="footer__item">
+                <img src="img/logo-partner-2.png" alt="logo partner" />
+              </li>
+              <li class="footer__item">
+                <img src="img/logo-partner-3.png" alt="logo partner" />
+              </li>
+              <li class="footer__item">
+                <img src="img/logo-partner-4.jpg" alt="logo partner" />
+              </li>
+              <li class="footer__item">
+                <img src="img/logo-partner-5.svg" alt="logo partner" />
+              </li>
+            </ul>
+            <a href="#" class="footer__btn">
+              <svg width="32" height="32">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </div>
+          <p class="text">
+            © 2023, Sova.gg - это мультивалютный обменный сервис, где Вы можете
+            безопасно и выгодно купить или продать нужную Вам валюту.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
