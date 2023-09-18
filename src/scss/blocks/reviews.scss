@@ -2,6 +2,9 @@
   margin-top: 30px;
 
   &__wrapper {
+    position: relative;
+    z-index: 1;
+
     padding: 30px 50px;
     background-color: $blue-4;
     border-radius: 15px;
@@ -10,7 +13,7 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 30px;
 
     margin-top: 20px;
   }

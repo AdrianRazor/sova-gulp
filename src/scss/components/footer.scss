@@ -1,4 +1,43 @@
 .footer {
+  margin-top: -100px;
+  padding: 150px 0;
+  background: $blue-5;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    height: 36px;
+
+    filter: grayscale(1);
+  }
+
+  &__btn {
+    & svg {
+      fill: $grey;
+      transition: 0.2s ease;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        & svg {
+          fill: $white;
+        }
+      }
+    }
+  }
 }
 
 // @media (max-width: 767px) {
