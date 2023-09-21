@@ -18,3 +18,31 @@
     margin-top: 20px;
   }
 }
+
+@media (max-width: 1439px) {
+  .reviews {
+    &__wrapper {
+      padding: 30px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .reviews {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews {
+    &__wrapper {
+      padding: 20px;
+    }
+
+    &__grid {
+      grid-template-columns: initial;
+    }
+  }
+}

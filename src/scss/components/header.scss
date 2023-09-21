@@ -1,5 +1,9 @@
 .header {
   position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
   background-color: $blue-4;
 
   &__wrapper {
@@ -13,7 +17,31 @@
   }
 }
 
-// @media (max-width: 767px) {
-//   .header {
-//   }
-// }
+@media (max-width: 767px) {
+  .header {
+    &__wrapper {
+      padding: 20px 0;
+    }
+
+    &__nav {
+      display: none;
+      height: 100dvh;
+
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
+    &__burger {
+      display: block;
+    }
+
+    &.open {
+      & .header {
+        &__nav {
+          display: block;
+        }
+      }
+    }
+  }
+}
