@@ -4,7 +4,6 @@ import browserSync from "browser-sync";
 import concat from "gulp-concat";
 import cssnano from "gulp-cssnano";
 import del from "del";
-import imagemin from "gulp-imagemin";
 import sass from "gulp-dart-sass";
 import sourcemaps from "gulp-sourcemaps";
 import uglify from "gulp-uglify";
@@ -56,14 +55,6 @@ export function fonts() {
     .pipe(browserSync.stream());
 }
 
-// Libs task
-export function libs() {
-  return gulp
-    .src("src/libs/**/*")
-    .pipe(gulp.dest("dist/libs/"))
-    .pipe(browserSync.stream());
-}
-
 // Clean task
 export function clean() {
   return del(["dist"]);
@@ -82,12 +73,11 @@ export function watch() {
   gulp.watch("src/js/**/*.js", js).on("all", browserSync.reload);
   gulp.watch("src/img/**/*", img);
   gulp.watch("src/fonts/**/*", fonts);
-  gulp.watch("src/libs/**/*", libs);
 }
 
 // Default task
 export const dev = gulp.series(
   clean,
-  gulp.parallel(html, scss, js, img, fonts, libs),
+  gulp.parallel(html, scss, js, img, fonts),
   watch
 );
