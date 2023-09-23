@@ -55,5 +55,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  // Accordion
+  const accordion = document.querySelectorAll(".accordion__item");
+  if (accordion) {
+    accordion.forEach((acc) => {
+      acc.addEventListener("click", () => {
+        acc.classList.toggle("open");
+      });
+    });
+  }
+
   console.log("DOM fully loaded and parsed");
 });
