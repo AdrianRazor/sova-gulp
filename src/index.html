@@ -56,7 +56,13 @@
 
                 <div class="input input--coin">
                   <div class="input__field">
-                    <input type="number" id="moneyOut" value="100" />
+                    <input
+                      type="number"
+                      id="moneyOut"
+                      value="1"
+                      inputmode="numeric"
+                      pattern="[0-9]*"
+                    />
                     <div class="input__box">
                       <span class="text text--upper">BTC</span>
                       <div class="input__icon">
@@ -72,26 +78,26 @@
                 <div class="start__box">
                   <h3 class="text">Валюта отдачи:</h3>
                   <ul class="start__coins">
-                    <li class="btn btn--small active">LTC</li>
-                    <li class="btn btn--small">XTZ</li>
-                    <li class="btn btn--small">BTC</li>
-                    <li class="btn btn--small">ZEC</li>
-                    <li class="btn btn--small">TRX</li>
-                    <li class="btn btn--small">ETH</li>
-                    <li class="btn btn--small">XMR</li>
-                    <li class="btn btn--small">DASH</li>
-                    <li class="btn btn--small">DOGE</li>
-                    <li class="btn btn--small">VET</li>
-                    <li class="btn btn--small">BTG</li>
-                    <li class="btn btn--small">DGB</li>
-                    <li class="btn btn--small">ALGO</li>
-                    <li class="btn btn--small">SOL</li>
-                    <li class="btn btn--small">RVN</li>
-                    <li class="btn btn--small">ATOM</li>
-                    <li class="btn btn--small">Ada</li>
-                    <li class="btn btn--small">Ark</li>
-                    <li class="btn btn--small">Usdt</li>
-                    <li class="btn btn--small">XLM</li>
+                    <li class="btn btn--small sell active">ada</li>
+                    <li class="btn btn--small sell">algo</li>
+                    <li class="btn btn--small sell">ark</li>
+                    <li class="btn btn--small sell">atom</li>
+                    <li class="btn btn--small sell">btc</li>
+                    <li class="btn btn--small sell">btg</li>
+                    <li class="btn btn--small sell">dash</li>
+                    <li class="btn btn--small sell">doge</li>
+                    <li class="btn btn--small sell">dgb</li>
+                    <li class="btn btn--small sell">eth</li>
+                    <li class="btn btn--small sell">ltc</li>
+                    <li class="btn btn--small sell">rvn</li>
+                    <li class="btn btn--small sell">sol</li>
+                    <li class="btn btn--small sell">trx</li>
+                    <li class="btn btn--small sell">usdt</li>
+                    <li class="btn btn--small sell">vet</li>
+                    <li class="btn btn--small sell">xlm</li>
+                    <li class="btn btn--small sell">xmr</li>
+                    <li class="btn btn--small sell">xtz</li>
+                    <li class="btn btn--small sell">zec</li>
                   </ul>
                 </div>
               </div>
@@ -99,129 +105,130 @@
               <div class="start__bottom">
                 <h3 class="text">Валюта отдачи:</h3>
                 <ul class="start__list">
-                  <li class="start__item active">
+                  <li class="start__item sell active">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">LTC</span>
+                    <span class="text text--14">ada</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">XTZ</span>
+                    <span class="text text--14">algo</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">BTC</span>
+                    <span class="text text--14">ark</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">ZEC</span>
+                    <span class="text text--14">atom</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">TRX</span>
+                    <span class="text text--14">btc</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">ETH</span>
+                    <span class="text text--14">btg</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">XMR</span>
+                    <span class="text text--14">dash</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">DASH</span>
+                    <span class="text text--14">doge</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">DOGE</span>
+                    <span class="text text--14">dgb</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">VET</span>
+                    <span class="text text--14">eth</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">BTG</span>
+                    <span class="text text--14">ltc</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">DGB</span>
+                    <span class="text text--14">rvn</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">ALGO</span>
+                    <span class="text text--14">sol</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">SOL</span>
+                    <span class="text text--14">trx</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">RVN</span>
+                    <span class="text text--14">usdt</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">ATOM</span>
+                    <span class="text text--14">vet</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">Ada</span>
+                    <span class="text text--14">xlm</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">Ark</span>
+                    <span class="text text--14">xmr</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">Usdt</span>
+                    <span class="text text--14">xtz</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item sell">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">XLM</span>
+                    <span class="text text--14">zec</span>
                   </li>
                 </ul>
               </div>
             </div>
+
             <div class="start__column">
               <div class="start__block">
                 <span class="text text--18 start__num">2</span>
@@ -232,7 +239,13 @@
 
                 <div class="input input--coin">
                   <div class="input__field">
-                    <input type="number" id="moneyIn" value="100" />
+                    <input
+                      type="number"
+                      id="moneyIn"
+                      value="1"
+                      inputmode="numeric"
+                      pattern="[0-9]*"
+                    />
                     <div class="input__box">
                       <span class="text text--upper">BTC</span>
                       <div class="input__icon">
@@ -247,27 +260,27 @@
 
                 <div class="start__box">
                   <h3 class="text">Валюта получения:</h3>
-                  <ul class="start__coins">
-                    <li class="btn btn--small active">LTC</li>
-                    <li class="btn btn--small">XTZ</li>
-                    <li class="btn btn--small">BTC</li>
-                    <li class="btn btn--small">ZEC</li>
-                    <li class="btn btn--small">TRX</li>
-                    <li class="btn btn--small">ETH</li>
-                    <li class="btn btn--small">XMR</li>
-                    <li class="btn btn--small">DASH</li>
-                    <li class="btn btn--small">DOGE</li>
-                    <li class="btn btn--small">VET</li>
-                    <li class="btn btn--small">BTG</li>
-                    <li class="btn btn--small">DGB</li>
-                    <li class="btn btn--small">ALGO</li>
-                    <li class="btn btn--small">SOL</li>
-                    <li class="btn btn--small">RVN</li>
-                    <li class="btn btn--small">ATOM</li>
-                    <li class="btn btn--small">Ada</li>
-                    <li class="btn btn--small">Ark</li>
-                    <li class="btn btn--small">Usdt</li>
-                    <li class="btn btn--small">XLM</li>
+                  <ul id="coins-get" class="start__coins">
+                    <li class="btn btn--small get active">ada</li>
+                    <li class="btn btn--small get">algo</li>
+                    <li class="btn btn--small get">ark</li>
+                    <li class="btn btn--small get">atom</li>
+                    <li class="btn btn--small get">btc</li>
+                    <li class="btn btn--small get">btg</li>
+                    <li class="btn btn--small get">dash</li>
+                    <li class="btn btn--small get">doge</li>
+                    <li class="btn btn--small get">dgb</li>
+                    <li class="btn btn--small get">eth</li>
+                    <li class="btn btn--small get">ltc</li>
+                    <li class="btn btn--small get">rvn</li>
+                    <li class="btn btn--small get">sol</li>
+                    <li class="btn btn--small get">trx</li>
+                    <li class="btn btn--small get">usdt</li>
+                    <li class="btn btn--small get">vet</li>
+                    <li class="btn btn--small get">xlm</li>
+                    <li class="btn btn--small get">xmr</li>
+                    <li class="btn btn--small get">xtz</li>
+                    <li class="btn btn--small get">zec</li>
                   </ul>
                 </div>
               </div>
@@ -275,129 +288,130 @@
               <div class="start__bottom">
                 <h3 class="text">Валюта получения:</h3>
                 <ul class="start__list">
-                  <li class="start__item active">
+                  <li class="start__item get active">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">LTC</span>
+                    <span class="text text--14">ada</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">XTZ</span>
+                    <span class="text text--14">algo</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">BTC</span>
+                    <span class="text text--14">ark</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">ZEC</span>
+                    <span class="text text--14">atom</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">TRX</span>
+                    <span class="text text--14">btc</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">ETH</span>
+                    <span class="text text--14">btg</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">XMR</span>
+                    <span class="text text--14">dash</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">DASH</span>
+                    <span class="text text--14">doge</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">DOGE</span>
+                    <span class="text text--14">dgb</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">VET</span>
+                    <span class="text text--14">eth</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">BTG</span>
+                    <span class="text text--14">ltc</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">DGB</span>
+                    <span class="text text--14">rvn</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">ALGO</span>
+                    <span class="text text--14">sol</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">SOL</span>
+                    <span class="text text--14">trx</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">RVN</span>
+                    <span class="text text--14">usdt</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">ATOM</span>
+                    <span class="text text--14">vet</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">Ada</span>
+                    <span class="text text--14">xlm</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">Ark</span>
+                    <span class="text text--14">xmr</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">Usdt</span>
+                    <span class="text text--14">xtz</span>
                   </li>
-                  <li class="start__item">
+                  <li class="start__item get">
                     <div class="start__icon">
                       <img src="img/logo-btc.png" alt="logo btc" />
                     </div>
-                    <span class="text text--14">XLM</span>
+                    <span class="text text--14">zec</span>
                   </li>
                 </ul>
               </div>
             </div>
+
             <div class="start__column">
               <div class="start__block">
                 <span class="text text--18 start__num">3</span>
