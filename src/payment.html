@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Payment</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="logo">
+            <span class="title">SovaDigitalSwapX</span>
+          </a>
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="text nav__item">
+                <a href="rules.html">Правила обмена</a>
+              </li>
+              <li class="text nav__item">
+                <a href="partners.html">Партнерам</a>
+              </li>
+              <li class="text nav__item">
+                <a href="faq.html">Ответы на вопросы</a>
+              </li>
+              <li class="text nav__item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger header__burger">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="payment">
+        <div class="container">
+          <div class="text payment__wrapper">
+            <div class="payment__head">
+              <h1 class="text text--18 payment__title">Заявка: 1473007</h1>
+              <h2 class="title">
+                Для завершения операции обмена совершите следующие действия
+              </h2>
+              <div class="text payment__exchange">
+                <span>Вы меняете:</span>
+                <div class="payment__icon">
+                  <img src="img/logo-btc.png" alt="coin logo" />
+                </div>
+                <span>300</span>
+                <span>rub</span>
+                <span>на</span>
+                <div class="payment__icon">
+                  <img src="img/logo-btc.png" alt="coin logo" />
+                </div>
+                <span> 0.00009902</span>
+                <span>btc</span>
+              </div>
+              <p class="text text--center">
+                Оплатите заявку в течении
+                <span>30:00</span>
+              </p>
+            </div>
+
+            <div class="payment__block">
+              <div class="payment__step payment__step--center">
+                <span class="payment__figure">1</span>
+                <p class="text">Осуществить перевод по реквизитам</p>
+              </div>
+
+              <p class="text">
+                Убедитесь в том, что вы выбрали правильную сеть ETH. Выбранная
+                сеть ERC20/
+              </p>
+
+              <div class="payment__row">
+                <p class="text">Кошелёк:</p>
+                <div class="payment__field">
+                  <p class="text">2202206791431781</p>
+                  <button class="payment__copy">
+                    <svg width="24" height="24">
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="payment__row">
+                <p class="text">Сумма:</p>
+                <div class="payment__field">
+                  <p class="text"><span>300</span> <span>RUB</span></p>
+                  <button class="payment__copy">
+                    <svg width="24" height="24">
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="payment__block">
+              <div class="payment__step">
+                <span class="payment__figure">2</span>
+                <p class="text">
+                  Данная операция производится оператором в ручном режиме и
+                  занимает от 5 до 60 минут.
+                  <br />
+                  Отследить статус заявки можно через Ваш личный кабинет.
+                  <br />
+                  Пожалуйста убедитесь, что Вы не только нажали на кнопку «Я
+                  оплатил», но и действительно перевели к нам средства.
+                </p>
+              </div>
+            </div>
+
+            <div class="payment__buttons">
+              <button class="btn">Я оплатил</button>
+              <button class="btn btn--blue">Отмена</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

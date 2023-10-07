@@ -1,7 +1,7 @@
 .btn {
   height: 50px;
   padding: 0 20px;
-  background-color: $green;
+  background: $green;
   border-radius: 99px;
 
   display: flex;
@@ -20,22 +20,32 @@
 
   @media (any-hover: hover) {
     &:hover {
-      background-color: $green-hover;
+      background: $green-hover;
     }
   }
 
   &--small {
     height: initial;
     padding: 8px;
-    background-color: $blue-2;
+    background: $blue-2;
 
     font-size: 12px;
     text-transform: uppercase;
 
     &.active {
-      background-color: $green;
+      background: $green;
       box-shadow: 0px 7px 15px rgba(0, 191, 150, 0.25),
         0px 4px 6px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  &--blue {
+    background: $blue-2;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: $blue;
+      }
     }
   }
 }
