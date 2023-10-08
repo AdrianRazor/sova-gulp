@@ -43,7 +43,9 @@
         <div class="container">
           <div class="text payment__wrapper">
             <div class="payment__head">
-              <h1 class="text text--18 payment__title">Заявка: 1473007</h1>
+              <h1 class="text text--18 payment__title">
+                Заявка: <span id="application">1473007</span>
+              </h1>
               <h2 class="title">
                 Для завершения операции обмена совершите следующие действия
               </h2>
@@ -63,7 +65,7 @@
               </div>
               <p class="text text--center">
                 Оплатите заявку в течении
-                <span>30:00</span>
+                <span id="timer">30:00</span>
               </p>
             </div>
 
@@ -75,7 +77,7 @@
 
               <p class="text">
                 Убедитесь в том, что вы выбрали правильную сеть ETH. Выбранная
-                сеть ERC20/
+                сеть ERC20
               </p>
 
               <div class="payment__row">
@@ -119,8 +121,8 @@
             </div>
 
             <div class="payment__buttons">
-              <button class="btn">Я оплатил</button>
-              <button class="btn btn--blue">Отмена</button>
+              <a href="success.html" class="btn">Я оплатил</a>
+              <a href="index.html" class="btn btn--blue">Отмена</a>
             </div>
           </div>
         </div>

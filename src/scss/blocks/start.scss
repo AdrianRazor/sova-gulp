@@ -129,8 +129,41 @@
   }
 
   &__icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    &--border {
+      border: 5px solid $blue;
+    }
+  }
+
+  &__exchange {
+    position: relative;
+
+    display: grid;
+    gap: 15px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__amount {
+    margin-left: auto;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    z-index: 1;
+
+    fill: $green;
+    transform: translateY(-50%) rotate(90deg);
   }
 }
 
@@ -154,6 +187,10 @@
   .start {
     &__block {
       padding: 50px 20px 30px;
+    }
+
+    &__decor {
+      display: none;
     }
 
     &__bottom {

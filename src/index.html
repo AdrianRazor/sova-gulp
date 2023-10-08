@@ -420,6 +420,31 @@
                   <h2 class="title">Ввод данных</h2>
                 </div>
 
+                <div class="start__exchange">
+                  <div class="start__row">
+                    <div class="start__icon start__icon--border">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <p class="text">Сбербанк RUB</p>
+
+                    <p class="text start__amount">300</p>
+                    <p class="text text--green">rub</p>
+                  </div>
+                  <div class="start__row">
+                    <div class="start__icon start__icon--border">
+                      <img src="img/logo-btc.png" alt="logo btc" />
+                    </div>
+                    <p class="text">Bitcoin</p>
+
+                    <p class="text start__amount">0.00009789</p>
+                    <p class="text text--green">btc</p>
+                  </div>
+
+                  <svg class="start__decor" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#arrows"></use>
+                  </svg>
+                </div>
+
                 <div class="form">
                   <h3 class="text">Введите данные для завершения обмена:</h3>
                   <div class="input form__input">
@@ -483,8 +508,8 @@
                     <div class="input__field">
                       <input
                         type="number"
-                        id="userPhone"
-                        placeholder="Ваш номер телефона"
+                        id="userWallet"
+                        placeholder="Bitcoin кошелёк от 28 до 42 символов"
                       />
                       <div class="input__box">
                         <div class="input__icon">
@@ -508,7 +533,7 @@
                       </span>
                     </label>
                   </div>
-                  <button type="submit" class="btn form__btn">
+                  <button id="exchange" type="submit" class="btn form__btn">
                     Обменять сейчас
                   </button>
                 </div>
@@ -615,6 +640,42 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal">
+      <div class="modal__window">
+        <h2 class="title">Подтверждение</h2>
+        <p class="text modal__text">
+          Для завершения операции обмена подтвердите переход по ссылке
+        </p>
+
+        <div class="modal__exchange">
+          <div class="modal__box">
+            <div class="modal__icon">
+              <img src="img/logo-btc.png" alt="logo btc" />
+            </div>
+            <p class="text">300</p>
+          </div>
+
+          <svg class="modal__arrow" width="16" height="9">
+            <use xlink:href="img/sprite.svg#arrowDown"></use>
+          </svg>
+
+          <div class="modal__box">
+            <div class="modal__icon">
+              <img src="img/logo-btc.png" alt="logo btc" />
+            </div>
+            <p class="text">0.00009665</p>
+          </div>
+        </div>
+
+        <div class="modal__buttons">
+          <a href="payment.html" class="btn">Перейти к оплате</a>
+          <button class="btn btn--blue modal__close">Закрыть</button>
+        </div>
+
+        <div class="modal__icon-x modal__close"></div>
+      </div>
+    </div>
 
     <script src="js/main.js"></script>
   </body>

@@ -13,14 +13,87 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  // Modal
+  const modal = document.querySelector(".modal");
+  const btnExchange = document.querySelector("#exchange");
+
+  if (btnExchange && modal) {
+    btnExchange.addEventListener("click", () => {
+      root.classList.add("lock");
+      modal.classList.add("open");
+    });
+
+    const btnClose = document.querySelectorAll(".modal__close");
+
+    if (btnClose) {
+      btnClose.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          root.classList.remove("lock");
+          modal.classList.remove("open");
+        });
+      });
+    }
+
+    window.addEventListener("click", (e) => {
+      if (e.target.classList.contains("modal")) {
+        root.classList.remove("lock");
+        modal.classList.remove("open");
+      }
+    });
+  }
+
   // Accordion
   const accordion = document.querySelectorAll(".accordion__item");
+
   if (accordion) {
     accordion.forEach((acc) => {
       acc.addEventListener("click", () => {
         acc.classList.toggle("open");
       });
     });
+  }
+
+  // Payment timer
+  const timer = document.querySelector("#timer");
+
+  if (timer) {
+    startCountdown(timer);
+  }
+
+  function startCountdown(element) {
+    let minutes = 30;
+    let seconds = 0;
+
+    const countdownInterval = setInterval(function () {
+      if (minutes === 0 && seconds === 0) {
+        clearInterval(countdownInterval);
+      } else {
+        // Форматирование времени для вывода
+        const formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
+        const formattedSeconds = seconds < 10 ? "0" + seconds : seconds;
+
+        element.innerHTML = `${formattedMinutes}:${formattedSeconds}`;
+
+        // Уменьшение времени
+        if (seconds === 0) {
+          minutes--;
+          seconds = 59;
+        } else {
+          seconds--;
+        }
+      }
+    }, 1000);
+  }
+
+  // Payment application
+  const application = document.querySelector("#application");
+
+  if (application) {
+    const randomDigits = Math.floor(Math.random() * 10000)
+      .toString()
+      .padStart(4, "0");
+
+    application.innerHTML = `147${randomDigits}`;
   }
 
   // --------- Calculator ---------
